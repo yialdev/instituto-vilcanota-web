@@ -1,0 +1,149 @@
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e8f0fe 100%);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.form-columns {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.form-column {
+    flex: 1;
+    min-width: 45%;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-column h3 {
+    color: #083864;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #083864;
+}
+
+.form-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.form-table td {
+    padding: 8px;
+    vertical-align: middle;
+    background-color: white;
+    vertical-align: top;
+}
+
+.form-table td:first-child {
+    width: 40%;
+}
+
+.form-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.form-table tr:hover td {
+    background-color: #e8eeff;
+}
+
+.form-table label {
+    font-weight: 600;
+    color: #0d47a1;
+    margin-right: 10px;
+    min-width: 180px;
+    display: inline-block;
+}
+
+.form-section {
+    background: linear-gradient(90deg, #0d47a1 0%, #1565c0 100%) !important;
+    color: white;
+    font-weight: bold;
+    padding: 12px !important;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+.form-table input[type="text"],
+.form-table input[type="number"],
+.form-table select {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #e0e0e0;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+    border: 1px solid #ddd;
+}
+
+.form-table input[type="text"]:focus,
+.form-table input[type="number"]:focus,
+.form-table select:focus {
+    border-color: #0d47a1;
+    outline: none;
+}
+
+.form-table input[type="file"] {
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: transparent;
+}
+
+.form-table input[type="file"]::file-selector-button {
+    padding: 8px 16px;
+    background: #0d47a1;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.form-table input[type="file"]::file-selector-button:hover {
+    background: #1565c0;
+}
+
+.submit-container {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    margin-top: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.submit-btn {
+    padding: 12px 40px;
+    background: linear-gradient(90deg, #0d47a1 0%, #1565c0 100%);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: transform 0.2s;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(26,115,232,0.2);
+}
+
+@media (max-width: 768px) {
+    .form-columns {
+        flex-direction: column;
+    }
+}
